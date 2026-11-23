@@ -71,3 +71,105 @@ Secure-Password-Generator/
 - **password_generator.py:** Contains the password-generation functionality and related logic.
 - **tests/:** Contains the tests used to check the application's functionality.
 - **test_password_generator.py:** Contains automated tests for the password generator.
+## 6. How the Application Works
+
+The application will follow a simple process to generate passwords based on user requirements.
+
+1. The application starts and displays the main menu.
+2. The user selects the password generation option.
+3. The application asks the user to enter the desired password length.
+4. The user chooses which character types to include: uppercase letters, lowercase letters, numbers, and special characters.
+5. The application validates the user's input.
+6. The password generator creates a random password using the selected requirements.
+7. The generated password is displayed to the user.
+8. The user can generate another password, view security guidance, or exit the application.
+
+## 7. Application Design
+
+The application will use a modular design to separate user interaction from password-generation functionality.
+
+### Main Components
+
+- **Main Application:** Manages the main menu, user input, application flow, and output.
+- **Password Generator:** Handles password-generation logic and uses the Python `secrets` module to generate unpredictable passwords.
+- **PasswordGenerator Class:** Organises password-generation functionality and related methods.
+- **Input Validation:** Checks user choices and handles invalid inputs to prevent unexpected application behaviour.
+- **Testing Module:** Contains automated tests to check password length, selected character requirements, and input validation.
+
+This design helps make the application easier to understand, test, maintain, and improve.
+
+## 8. Installation and Running Instructions
+
+The application will be developed using Python and does not require additional third-party packages.
+
+### Requirements
+
+- Python 3 installed on the computer.
+- Git installed for cloning the repository.
+- A code editor such as Visual Studio Code.
+
+### Download the Project
+
+Clone the GitHub repository:
+
+```bash
+git clone https://github.com/vincnzogaming12-code/Secure-password-generator.git
+```
+
+Open the project directory:
+
+```bash
+cd Secure-password-generator
+```
+
+### Run the Application
+
+Run the following command in the terminal:
+
+```bash
+python main.py
+```
+
+On Windows, if necessary, use:
+
+```bash
+py main.py
+```
+
+## 9. Testing Strategy
+
+Testing will be carried out throughout the development process to check that the application works correctly.
+
+The main testing areas will include:
+
+- Checking that the generated password has the requested length.
+- Checking that uppercase letters are included when selected.
+- Checking that lowercase letters are included when selected.
+- Checking that numbers are included when selected.
+- Checking that special characters are included when selected.
+- Checking that invalid password lengths and user choices are handled correctly.
+- Checking that the application responds correctly to different user selections.
+
+Automated tests will be created using Python's built-in `unittest` framework.
+
+To run the tests, use:
+
+```bash
+python -m unittest discover -s tests
+```
+
+## 10. Security Considerations
+
+Security is an important part of this project.
+
+- The Python `secrets` module will be used instead of the standard `random` module for password generation.
+- Passwords will be generated according to the character types selected by the user.
+- The application will not store generated passwords in a database or save them to files.
+- Users will be encouraged to choose longer passwords for better protection against guessing attacks.
+- Basic password security guidance will be provided within the application.
+
+## 11. Development Reflection
+
+This section will be completed after the application has been developed and tested.
+
+The reflection will discuss the development process, design decisions, challenges encountered, the importance of testing, and possible improvements to the application.
