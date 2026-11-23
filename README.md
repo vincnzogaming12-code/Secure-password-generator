@@ -47,3 +47,27 @@ The project will use the following technologies and tools:
 - **Git and GitHub:** Used for version control, tracking development progress, and storing the project repository.
 - **Secrets Module:** A Python standard library module used to generate secure and unpredictable random values for passwords.
 - **Unittest:** A Python testing framework used to check the application's functionality.
+## 5. Project Structure
+
+The project will be organised into separate files and folders to keep the application clear, organised, and maintainable.
+
+```text
+Secure-Password-Generator/
+│
+├── README.md
+├── .gitignore
+├── main.py
+├── password_generator.py
+│
+└── tests/
+    └── test_password_generator.py
+```
+
+### File and Folder Responsibilities
+
+- **README.md:** Contains project information, objectives, features, instructions, testing details, and project reflection.
+- **.gitignore:** Specifies files and folders that Git should ignore.
+- **main.py:** Acts as the main entry point of the application and manages user interaction.
+- **password_generator.py:** Contains the password-generation functionality and related logic.
+- **tests/:** Contains the tests used to check the application's functionality.
+- **test_password_generator.py:** Contains automated tests for the password generator.
