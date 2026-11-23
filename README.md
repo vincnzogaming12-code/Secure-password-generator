@@ -38,3 +38,12 @@ The Secure Password Generator will include the following features:
 7. **Input Validation:** The application will check user choices and handle invalid inputs.
 
 8. **Password Security Guidance:** The application will provide basic advice about creating strong passwords.
+## 4. Technologies Used
+
+The project will use the following technologies and tools:
+
+- **Python:** The main programming language used to develop the application.
+- **Visual Studio Code (VS Code):** The code editor used to write, run, and debug the Python program.
+- **Git and GitHub:** Used for version control, tracking development progress, and storing the project repository.
+- **Secrets Module:** A Python standard library module used to generate secure and unpredictable random values for passwords.
+- **Unittest:** A Python testing framework used to check the application's functionality.
